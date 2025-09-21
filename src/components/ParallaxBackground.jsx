@@ -16,7 +16,7 @@ const ParallaxBackground = () => {
             <motion.div 
             className='absolute inset-0 w-full h-screen -z-30'
             style={{
-                backgroundImage:"url(/assets/backgrounds/bg.png)",
+                backgroundImage:`url(${import.meta.env.BASE_URL}assets/backgrounds/bg.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "bottom",
                 y: mountain1Y,
@@ -26,7 +26,7 @@ const ParallaxBackground = () => {
             <motion.div 
             className='absolute inset-0 w-full h-screen -z-31'
             style={{
-                backgroundImage:"url(/assets/backgrounds/bg2.png)",
+                backgroundImage:`url(${import.meta.env.BASE_URL}assets/backgrounds/bg2.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "bottom",
                 y: mountain2Y,
@@ -36,7 +36,7 @@ const ParallaxBackground = () => {
             <motion.div 
             className='absolute inset-0 w-full h-screen -z-30'
             style={{
-                backgroundImage:"url(/assets/backgrounds/planets.png)",
+                backgroundImage:`url(${import.meta.env.BASE_URL}assets/backgrounds/planets.png)`,
                 backgroundSize: "cover",
                 backgroundPosition: "bottom",
                 x: planetsX,
@@ -46,7 +46,7 @@ const ParallaxBackground = () => {
             <div 
             className='absolute inset-0 w-full h-screen -z-40 opacity-70'
             style={{
-                backgroundImage:"url(/assets/backgrounds/sky.jpg)",
+                backgroundImage:`url(${import.meta.env.BASE_URL}assets/backgrounds/sky.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "bottom"
             }}
@@ -59,7 +59,7 @@ const ParallaxBackground = () => {
                 loop
                 playsInline
             >
-                <source src="/assets/backgrounds/videobg.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}assets/backgrounds/videobg.mp4`} type="video/mp4" />
             </video>
 
         </div>
