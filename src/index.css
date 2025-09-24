@@ -176,11 +176,11 @@ body {
 }
 
 .grid-reddish-color {
-  @apply p-6 bg-gradient-to-br from-red-500 to-storm rounded-2xl;
+  @apply p-6 bg-gradient-to-b from-red-500 to-rose-900 rounded-2xl;
 }
 
 .grid-blue-color {
-  @apply p-6 bg-gradient-to-tr from-storm to-purple-700 rounded-2xl;
+  @apply p-6 bg-gradient-to-b from-storm to-purple-700 rounded-2xl;
 }
 
 .grid-special-color {

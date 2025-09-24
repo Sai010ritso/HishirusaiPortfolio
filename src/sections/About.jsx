@@ -5,7 +5,7 @@ import { Frameworks } from "../components/Frameworks";
 
 const About = () => {
   return (
-    <section className="c-space section-spacing">
+    <section id="about" className="c-space section-spacing scroll-mt-28 md:scroll-mt-36">
         <h2 className="[font-family:nebulax] Biggesthead text-center">ABOUT ME</h2>
         <div className="grid grid-cols-1 gap-4 mt-12 relative">
             {/* background */}
@@ -30,11 +30,11 @@ const About = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               
               {/*G2*/}
-              <div className="grid-red-color h-[15rem] relative overflow-hidden rounded-2xl p-6">
+              <div className="grid-blue-color h-[15rem] relative overflow-hidden rounded-2xl p-6">
                 <div className="z-10 w-[50%]">
-                <p className="headtext">Time Zone</p>
+                <p className="headtext [font-family:nebulax]">9PM TO 5AM (PHT/UTC+8)</p>
                 <p className="subtext">
-                I'm based in Philippines, and open to remote work worldwide
+                I'm based in PH, and open to remote work worldwide
                 </p>
               </div>
               <figure className="absolute left-[30%] top-[10%]">
@@ -57,13 +57,13 @@ const About = () => {
                 <figure className="absolute left-[12%] top-[12%] md:scale-100">
                   <Frameworks 
                     outerRadius={120} 
-                    innerRadius={70} 
+                    innerRadius={60} 
                     outerIconSize={32} 
-                    innerIconSize={20} 
+                    innerIconSize={15} 
                   />
                 </figure>
                 <div className="z-10 w-[50%] ml-auto text-right">
-                  <p className="headtext">Stacks and Arts</p>
+                  <p className="headtext [font-family:nebulax]" >Stacks and Arts</p>
                   <p className="subtext">
                     I specialize in a variety of languages, frameworks, and also different art tools
                   </p>
@@ -100,22 +100,37 @@ const About = () => {
             
             {/* Cards acting as buttons */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              <a href="#frontend" className="grid-special-color group flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Front End Development section">
-                <div>
+              
+              <a href="#frontend" className="grid-blue-color group relative overflow-hidden flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Front End Development section">
+                <div className="relative z-10">
                   <p className="headtext [font-family:nebulax]">Front End Development</p>
                   <p className="subtext">Explore my front-end work</p>
                 </div>
-                <img src="/assets/arrow-right.svg" alt="Go" className="w-6 h-6 opacity-80 group-hover:translate-x-1 duration-200" />
+
+                 <img
+                  src="./assets/CodeLink.png"
+                  alt="Code preview"
+                  className="absolute inset-y-0 right-0 h-full w-1/2 object-cover"
+                  style={{ WebkitMaskImage: "linear-gradient(to left, black 60%, transparent 100%)", maskImage: "linear-gradient(to left, black 60%, transparent 100%)" }}
+                />
               </a>
 
-              <a href="#art" className="grid-black-color group flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Art Illustrations section">
-                <div>
+              <a href="#art" className="grid-red-color group relative overflow-hidden flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Art Illustrations section">
+                <div className="relative z-10">
                   <p className="headtext [font-family:nebulax]">Art Illustrations</p>
                   <p className="subtext">See my illustration pieces</p>
                 </div>
-                <img src="/assets/arrow-right.svg" alt="Go" className="w-6 h-6 opacity-80 group-hover:translate-x-1 duration-200" />
+                
+                <img
+                  src="./assets/ArtLink.png"
+                  alt="Art preview"
+                  className="absolute inset-y-0 right-0 h-full w-1/2 object-cover"
+                  style={{ WebkitMaskImage: "linear-gradient(to left, black 60%, transparent 100%)", maskImage: "linear-gradient(to left, black 60%, transparent 100%)" }}
+                />
               </a>
+
             </div>
+
         </div>
         
     </section>
