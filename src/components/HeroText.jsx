@@ -1,6 +1,7 @@
 import React from 'react'
-import { FlipWords } from './FlipWords'
+import { TypewriterEffectDemo } from './typewriter-effect';
 import { motion } from 'motion/react'
+import { FlipWords } from './FlipWords'
 
 const HeroText = () => {
 
@@ -23,7 +24,7 @@ const HeroText = () => {
                   animate="visible"
                   transition={{ delay: 0.5 }}
                 >
-                  Hi I'm Hishirusai
+                  Hishirusai
                 </motion.h1>
 
                 <div className='flex flex-col items-start'>
@@ -47,12 +48,7 @@ const HeroText = () => {
                       animate="visible"
                       transition={{ delay: 0.8 }}
                     >
-
-                      <FlipWords 
-                      words={["Creative", "Visual", "Innovative"]}
-                      className="[font-family:nebulax] font-black text-white text-7xl"
-                      />
-
+                      <TypewriterEffectDemo />
                     </motion.div>
 
                     <motion.p 
@@ -72,13 +68,13 @@ const HeroText = () => {
             <div className='flex flex-col items-center space-y-2 md:hidden'>
 
               <motion.p 
-                className='[font-family:nebulax] text-2xl font-medium'
+                className='[font-family:nebulax] text-5xl font-medium'
                 variants={variants}
                 initial="hidden"
                 animate="visible"
                 transition={{ delay: 0.5 }}
               >
-                Hi I'm Hishirusai
+                Hishirusai
               </motion.p>
 
               <div>
@@ -100,10 +96,7 @@ const HeroText = () => {
                 animate="visible"
                 transition={{ delay: 0.8 }}
                 >
-                  <FlipWords 
-                    words={["Creative", "Visual", "Innovative"]}
-                    className="[font-family:nebulax] font-black text-white text-4xl mx-auto"
-                  />
+                  <TypewriterEffectDemo className="text-4xl mx-auto" />
                 </motion.div>
 
                 <motion.p 

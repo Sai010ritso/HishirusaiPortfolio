@@ -67,6 +67,16 @@
   }
   --animate-marquee: marquee 50s linear infinite;
   --animate-marquee-vertical: marquee-vertical 50s linear infinite;
+  --animate-spin-slow: spin-slow 3s linear infinite;
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
   @keyframes marquee {
     from {
@@ -110,12 +120,21 @@ body {
   @apply font-bold text-3xl md:text-4xl;
 }
 
+.Biggesthead {
+  @apply mt-2 mb-2 text-6xl;
+}
+
 .headtext {
-  @apply mt-2 mb-2 text-xl;
+  @apply mt-2 mb-2 text-2xl;
+}
+
+.Biggertext {
+  @apply mt-2 mb-2 text-2xl;
 }
 
 .subtext {
-  @apply text-neutral-400 text-sm md:text-base text-pretty;
+  @apply text-sm md:text-base text-pretty;
+  color: #F0EFE7;
 }
 
 /* Navigation */
@@ -156,9 +175,22 @@ body {
   @apply p-6 bg-gradient-to-b from-storm to-indigo rounded-2xl;
 }
 
+.grid-reddish-color {
+  @apply p-6 bg-gradient-to-br from-red-500 to-storm rounded-2xl;
+}
+
+.grid-blue-color {
+  @apply p-6 bg-gradient-to-tr from-storm to-purple-700 rounded-2xl;
+}
+
 .grid-special-color {
   @apply p-6 bg-gradient-to-b from-royal to-lavender rounded-2xl;
 }
+
+.grid-red-color {
+  @apply p-6 bg-gradient-to-l from-red-700 to-pink-800 rounded-2xl;
+}
+
 .grid-black-color {
   @apply p-6 bg-gradient-to-tl from-[#3A3A3A] via-[#242424] to-[#3A3A3A] rounded-2xl;
 }
@@ -174,4 +206,9 @@ body {
 
 .field-input-focus {
   @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/20;
+}
+
+/* Text shadow utilities */
+.text-shadow-2xs {
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6), 0 0 18px rgba(0, 0, 0, 0.35);
 }
