@@ -2,8 +2,8 @@ import React from 'react'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
 import About from './sections/About'
-import Frontend from './sections/Frontend'
-import Art from './sections/Art'
+import Projects from './sections/Projects'
+import Socials from './sections/Socials'
 
 const App = () => {
   return (
@@ -11,15 +11,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-
-      <section className='min-h-screen' />
-      <section className='min-h-screen' />
-      <Frontend />
-      <Art />
-      <section className='min-h-screen' />
-      <section className='min-h-screen' />
-
-
+      <Projects />
+      <Socials />
     </div>
   )
 }

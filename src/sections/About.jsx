@@ -1,4 +1,5 @@
 import CopyEmailButton from "../components/CopyEmailButton";
+import SocialMediaButton from "../components/SocialMediaButton";
 import { Globe } from "../components/globe";
 import { Frameworks } from "../components/Frameworks";
 
@@ -48,7 +49,10 @@ const About = () => {
                   <p className="text-center headtext">
                     Do you want to start a project together?
                   </p>
-                  <CopyEmailButton />
+                  <div className="flex flex-col items-center gap-3">
+                    <CopyEmailButton />
+                    <SocialMediaButton />
+                  </div>
                 </div>
               </div>
 
@@ -95,40 +99,6 @@ const About = () => {
             </div>
 
             <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
-            </div>
-
-            
-            {/* Cards acting as buttons */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              
-              <a href="#frontend" className="grid-blue-color group relative overflow-hidden flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Front End Development section">
-                <div className="relative z-10">
-                  <p className="headtext [font-family:nebulax]">Front End Development</p>
-                  <p className="subtext">Explore my front-end work</p>
-                </div>
-
-                 <img
-                  src="./assets/CodeLink.png"
-                  alt="Code preview"
-                  className="absolute inset-y-0 right-0 h-full w-1/2 object-cover"
-                  style={{ WebkitMaskImage: "linear-gradient(to left, black 60%, transparent 100%)", maskImage: "linear-gradient(to left, black 60%, transparent 100%)" }}
-                />
-              </a>
-
-              <a href="#art" className="grid-red-color group relative overflow-hidden flex items-center justify-between rounded-2xl p-6 hover:-translate-y-1 duration-200" role="button" aria-label="Go to Art Illustrations section">
-                <div className="relative z-10">
-                  <p className="headtext [font-family:nebulax]">Art Illustrations</p>
-                  <p className="subtext">See my illustration pieces</p>
-                </div>
-                
-                <img
-                  src="./assets/ArtLink.png"
-                  alt="Art preview"
-                  className="absolute inset-y-0 right-0 h-full w-1/2 object-cover"
-                  style={{ WebkitMaskImage: "linear-gradient(to left, black 60%, transparent 100%)", maskImage: "linear-gradient(to left, black 60%, transparent 100%)" }}
-                />
-              </a>
-
             </div>
 
         </div>
