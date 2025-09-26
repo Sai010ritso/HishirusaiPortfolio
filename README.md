@@ -1,4 +1,4 @@
-Contact information for email only, the rest will be unvailable for privacy and other reasons and will be added in the future.
+Contact information for email only, the rest is currently unvailable for privacy and other reasons and will be added in the future.
 
 # DEPLOYED LINK
 https://sai010ritso.github.io/isiraniportfolio-main/
