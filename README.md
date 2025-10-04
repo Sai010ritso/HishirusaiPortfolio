@@ -1,8 +1,8 @@
 Contact information for email only, the rest is currently unvailable for privacy and other reasons and will be added in the future.
 
 # DEPLOYED LINK
-[https://sai010ritso.github.io/isiraniportfolio-main/
-](https://sai010ritso.github.io/HishirusaiPortfolio/)
+https://sai010ritso.github.io/HishirusaiPortfolio/
+
 HAVE FUN!!! Lucia Time is the Best
 
 # React + Vite
